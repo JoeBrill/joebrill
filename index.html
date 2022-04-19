@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head> <!--important content to page not shown to viewers-->
+    <meta charset="utf-8"> <!--This element sets the character set your document 
+                            should use to UTF-8 which includes most characters from 
+                            the vast majority of written languages. Essentially, it 
+                            can now handle any textual content you might put on it. 
+                            There is no reason not to set this and it can help avoid 
+                            some problems later on.-->
+    <title>HTML Notes</title>
+</head>
+<body> <!-- site planning -->
+    <img src="images/test-image.jpg" alt="image of girl walking under the constelations along a moonlit beach" width="800" height="400">
+<!--Doctument Heading-->
+<div>
+    <h1>HTML Notes</h1> <!-- h1 => h6 -->
+        <p>Right now I am in the process off learning HTML (hypertext markup language).</p>
+    <h2><Strong><em>Outline</em></Strong></h2> <!-- text to speech: <em> for slant. 
+        <Strong> for bold. <i> to slant only text i.e book title. <b> bold only text -->
+        <ul>
+            <li>Anatomy of an HTML document</li>
+        </ul>
+</div>
+
+
+<!--Anatomy of an HTML document-->
+<div>
+    <h2>Anatomy of an HTML document</h2>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8"&gt;
+                &lt;title>My test page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;img src="images/firefox-icon.png" alt="My test image"&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+</div>
+
+<!--Headings-->
+<div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</div>
+
+<!--LISTS-->
+<div> 
+    <h2>Ordered & Unordered Lists</h2>
+    <ul> <!--unordered list-->
+        <li>Login page</li>
+        <li>Dashboard</li>
+        <ol> <!--ordered list-->
+            <li>Income page</li>
+            <li>Expenditures</li>
+            <li>Debt Freedom Plan</li>
+            <li>Life Plan</li>
+            <li>Education Goals</li>  
+        </ol>
+    </ul>
+</div>
+
+<!--Quotes-->
+<div>
+    <h2>Quotes</h2>
+    <h3>Inline Quotes</h3>
+        <p>I heard a friend once say that <q>C'est la vie ne pas toujour le bon verite</p>. That always remained with me.</p>
+    <h3>Blockquotes</h3>
+        <blockquote>
+            <p>The text needing to have a citation attatched to it goes in here</p>
+            <cite>- Steve Curel</cite>
+        </blockquote>
+</div>
+
+<!--Time-->
+<div>
+    <h2>Time</h2>
+    <!--datetime attribute DATE: YYYY-MM-DD
+        use to put data about the date and time (semantics)-->
+        <time datetime="2025-05-08">8 May 2025</time><br>
+        <time datetime="2021-10-09">15 May 2022</time><br>
+        <!--Time attribute: hh-mm-ss.ddd-->
+        <time datetime="14:15:25.5">14:15:28.5</time><br>
+        <!--Time zone attribute: hh-mm-ss.ddd+-hh:mm
+        5 hrs behind the time in London-->
+        <time datetime="15:45-05:00">3:45pm in New York</time><br>
+        <!--Date and time together-->
+        <time datetime="2020-11-04T19:00">Wednesday, Nov 4th at 7p</time><br>
+        <time datetime="2020-11-04 19:00-0500">Wednesday, Nov 4th at 7p</time>
+</div>
+
+<!--Code, pre, and br-->
+<div>
+    <!--<code></code> will wrap text in a code format while
+    using the HTML elements &lt; and &gt; will add the packman signs -->
+    <h2>Code, pre, and br</h2>
+        <h3>&lt;Code&gt;</h3>
+            <p>You can write <code>{color:green;}</code> as a code block using the <code>&lt;code&gt;</code> tags.</p>
+        <h3>&lt;pre&gt;</h3> <!--Forces the browser to keep open spacing-->
+            <pre>
+            First line zero indent
+                second line four spaces
+            &lt;pre&gt; maintains the formatting & the spacing
+            </pre>
+        <h3>&lt;br&gt;</h3> <!--breaks for new line-->
+            <pre><p>    br is used to break the current line and start the next on a new line.</p></pre>
+</div>
+
+<!--ARIA Semantics-->
+<div>
+    <h2>ARIA Semantics</h2>
+</div>
+
+<!--Character Entities-->
+<div>
+    <h2>Character Entities</h2>
+    <p>&copy; and other special characters like &trade; can be created using their coresponding character entity such as <code>(&-trade-;)</code>
+    Alternatively you can use the alt key commands</p>
+</div>
+
+<!--Superscript, subscripts, and small text-->
+<div>
+    <h2>Superscript, subscripts, and small text</h2> <!--Math (for puting complex languages on a website) has a special markeup language called MathML-->
+        <p>Superscript: &lt;sup&gt;&lt;/sup&gt;<br></p>
+        <p>Subscript: &lt;sub&gt;&lt;/sub&gt;<br></p>
+        <p>Small Text (not size|significance): &lt;small&gt;&lt;/small&gt;<br></p> <!--<small> conveys something is of very little importance to the browser-->
+</div>
+
+<!--Adding images-->
+<div>
+    <h2>Adding images</h2>
+    <p><strong>Important</strong>: all images should have the following attributes; image, alt, width and height.</p>
+    <pre>
+        &lt;img src="image.jpg" 
+             alt="woman typing on computer" 
+             width="600" 
+             height="300"&gt;
+    </pre>
+    <img src="images/front-end-developer.png" alt="woman typing on computer" width="600" height="300">
+    <p>In some instances, such as when adding a companies logo, the alt attribute should be left blank for the user experience.</p>
+</div>
+
+<div>
+    <h2>File Formats</h2>
+    <h3>GIF</h3>
+    <ul>
+        <li>Good for compression large areas of a single color</li>
+        <li>Limited color space of 256 colors</li>
+        <li>Can do transparency, with jagged edges</li>
+        <li>Can have multiple frames, and make a little movie</li>
+    </ul>
+    <h3>SVG</h3>
+    <ul>
+        <li>Logos, icons, etc</li>
+        <li>Vector file</li>
+        <li>Prefered over all other types</li>
+    </ul>
+    <h3>JPG</h3>
+    <ul>
+        <li>Image format for compressing photos</li>
+        <li>Can be compressed by simplifying colors used</li>
+        <li>Make sure to resize and compress JPG</li>
+    </ul>
+    <h3>PNG</h3>
+    <ul>
+        <li>Images that need transparency</li>
+        <li>Good at compression</li>
+        <li>Photos & images</li>
+        <li>Sometimes better at compressing images than the JPG</li>
+    </ul>
+</div>
+
+<!--Image Responsiveness-->
+<div>
+    <h2>Image Responsiveness</h2>
+    <p>To account for different screen sizes, browser speeds, and machine capabilities, you can use HTML to send different sized images to the browser.</p>
+    <p>One of the more simple ways to do this can be seen bellow:</p>
+    <pre>
+        &lt;img src="images/front-end-developer-480.png" 
+        alt="woman typing on computer" 
+        width="600" height="300"
+        srcset="images/front-end-developer.png 2x,
+                images/front-end-developer.png 3x,
+                images/front-end-developer.png 4x"
+        &gt;
+    </pre>
+    <img src="images/front-end-developer.png-480" 
+         alt="woman typing on computer" 
+         width="600" height="300"
+         srcset="images/front-end-developer-960.png 2x,
+                images/front-end-developer-1440.png 3x,
+                images/front-end-developer-1920.png 4x"
+    >
+    <p><b>Change layout based on size of viewport</b></p>
+    <pre>
+        &lt;img src="images/front-end-developer-480.png" 
+        alt="woman typing on computer" 
+        width="600" height="300"
+        
+        srcset="images/front-end-developer.png 2x,
+                images/front-end-developer.png 3x,
+                images/front-end-developer.png 4x"
+        &gt;
+    </pre>
+    <img src="images/front-end-developer.png-480" 
+         alt="woman typing on computer" 
+         width="600" height="300"
+         srcset="images/front-end-developer-480.png 480w,
+                images/front-end-developer-960.png 960w,
+                images/front-end-developer-1440.png 1440w,
+                images/front-end-developer-1920.png 1920w"
+    >
+</div>
+
+<!--Linking in HTTP & HTTPS-->
+<div>
+    <h2>Adding Links to Webpages</h2>
+    <h3>Absolute URLS</h3> <!--points to a specific location on the web-->
+    <code>&lt;a href="link"&gt;This is a link&lt;/a&gt;</code><br>
+    <a href="https://www.linkedin.com/learning/html-essential-training-4/links?autoSkip=true&autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7a7053dd559b764b88a92&resume=false&u=37483484">This is a link</a><br>
+    <br><p>Bellow is an image with a link attatched to it.</p>
+    <a href="https://www.linkedin.com/learning/html-essential-training-4/links?autoSkip=true&autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7a7053dd559b764b88a92&resume=false&u=37483484">
+        <img src="images/front-end-developer-480.png" 
+             alt="woman typing on computer" 
+             width="600" 
+             height="300">
+    </a>
+    <br><h3>Relative URLS (<a href="https://www.linkedin.com/learning/html-essential-training-4/url-paths?autoSkip=true&autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7a7053dd559b764b88a92&resume=false&u=37483484">link</a>)</h3>
+    <p>"/" is used to search the file tree from outside the nested files inward. i.e. <b>/images/logo.gif</b></p>
+    <p>"../" Searches in the inverse maner from where you are currently in the nested files outwards. i.e. <b>../images/logo.gif</b></p>
+    <p><b>NOTE:</b>Refer to the video link above for details on using index.url for shortening url addresses,</p>
+</div>
+
+<!--Setting up HTML for navigation bars-->
+<div>
+    <h2><a href="https://www.linkedin.com/learning/html-essential-training-4/navigation?autoSkip=true&autoplay=true&contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7a7053dd559b764b88a92&resume=false&u=37483484">Navigation Bars</a></h2>
+    <!--Main navigation unordered list-->
+    <p>Below is an example of an <u><b>unordered navigation bar</u></b> setup. Note that it appears as a list without styling from CSS. It is <em>very&nbsp;important</em> when making a navigation bar to mark it up using ARIA roles so that the browser knows what it is.</p>
+    <nav>
+        <ul class="navbar" aria-label="main-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/People">People</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/contract">Contract</a></li>
+        </ul>
+    </nav>
+    <pre>
+        &lt;nav&gt;
+            &lt;ul class="navbar" aria-label="main-menu"&gt;
+                &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/People"&gt;People&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/prices"&gt;Prices&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/contract"&gt;Contract&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    </pre>
+
+    <!--Breadcrum trail ordered list-->
+    <p>Following is an example of an <b><u>ordered list</u></b> navigation (shown using a breadcrumb trail):</p>
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            <li><a href="/">Home</a></li>
+            <li><a href="/people">Blog</a></li>
+            <li><a href="/contact">March</a></li>
+            <li>March 9th updates</li>
+        </ol>
+    </nav>
+    <pre>
+        &lt;nav aria-label="Breadcrumb"&gt;
+            &lt;ol class="breadcrumbs"&gt;
+                &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/people"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="/contact"&gt;March&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;March 9th updates&lt;/li&gt;
+            &lt;/ol&gt;
+        &lt;/nav&gt;
+    </pre>
+    <!--Footer menus marked unimportant-->
+    <p>At the bottom of wepages you can often find <b><u>footers</u></b>. As these are not key to the material of the page being viewed it is marked as unimportant using ARIA-labels.</p>
+    <footer>
+        <a href="/about/privacy">Privacy Policy</a>
+        <a href="/about/legal">Terms of Service</a>
+    </footer>
+    <pre>
+        &lt;footer&gt;
+            &lt;a href="/about/privacy"&gt;Privacy Policy&lt;/a&gt;
+            &lt;a href="/about/legal"&gt;Terms of Service&lt;/a&gt;
+        &lt;/footer&gt;
+    </pre>
+</div>
+
+<!--Defenition list bellow for vocabulary and key concepts-->
+<div>
+    <h1>Dictionary</h1>
+    <h3>Attributes (HTML)</h3>
+    <ul><dl>
+        <li><dt><b>Global Attribute</b></dt></li>
+            <dd>Applies to any HTML element</dd>
+            <dd>Order of attributes never matters</dd><br>
+        <li><dt><b>Class Attribute</b></dt></li>
+            <dd>Allows us to target <b>all</b> elements with that class in our CSS or JavaScript<br>
+            <code>&lt;p class="intro"&gt;<br>
+                This is the introduction.<br>
+                &lt;/p&gt;
+            </code>
+            </pre></dd><br>
+        <li><dt><b>id Attribute</b></dt></li>
+            <dd>Allows us to target <b>a unique element with that id</b> in our CSS of JavaScript<br>
+            <code>&lt;p id="article-intro"&gt;<br>
+                    This is the introduction.<br>
+                &lt;/p&gt;
+            </code>
+            </pre></dd><br>
+            <dd>because id is <b>so specific</b> developers tend to stick to classes as the<br> 
+                specificity can be a challenge to manage</dd><br>
+                <dd>Are particularly helpful for addressing elements with JavaScript or a targeted link</dd><br>
+        <li><dt><b>Content Editable</b></dt> <!--defines editable elemen</b>ts--></li>
+            <dd>sets specific elements to be editable by users.
+                <blockquote contenteditable="true"> 
+                Click here to edit
+                </blockquote></dd>
+        <li><dt><b>lang</b></dt></li>
+            <dd>Sets the language (more detail later)</dd><br>
+        <li><dt><b>dir</b></dt></li>
+            <dd>Sets the direction of text.</dd><br>
+        <li><dt><b>srcset</b></dt></li>
+            <dd>Allows you to specify multiple files to be used based on either viewport or image pixel width.</dd><br>
+        <li><dt><b></b></dt></li>
+            <dd></dd><br>
+
+    </dl></ul>
+
+    <dt><h3>Elements (HTML)</h3></dt>
+    <ul><dl>
+        <li><dt><b></b></dt></li>
+            <dd></dd><br>
+    </dl></ul>
+
+    <dt><h3>Other</h3>
+    <ul><dl>
+        <li><dt><b>Nonbreaking Space</b></dt></li>
+            <dd>Use & nbsp followed by a ; to bond words together or force browser to put more that one space between words.</dd><br>
+        <li><dt><b>ARIA Roles</b></dt></li>
+            <dd>Attributes that provide accessible information about that specific element</dd><br>
+            <dd>Use the accesibility tool in the DOM to test for accessibilityto see if you need to add ARIA attributes</dd><br>
+        <li><dt><b></b></dt></li>
+            <dd></dd><br>
+    </dl></ul>
+</div>
+</body>
+</html>
